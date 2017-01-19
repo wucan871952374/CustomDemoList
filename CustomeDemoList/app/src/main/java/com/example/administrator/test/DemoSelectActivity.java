@@ -41,6 +41,9 @@ public class DemoSelectActivity extends AppCompatActivity {
                     case "TouchEventDemo":
                         intent.setClass(DemoSelectActivity.this,SencodActivity.class);
                         break;
+                    case "hlistView":
+                        intent.setClass(DemoSelectActivity.this,HlistViewActivity.class);
+                        break;
                 }
                 startActivity(intent);
             }
@@ -53,7 +56,7 @@ public class DemoSelectActivity extends AppCompatActivity {
         private String[] items;
 
        public Adapter() {
-           this.items = new String[]{"RealmDemo","TouchEventDemo"};
+           this.items = new String[]{"RealmDemo","TouchEventDemo", "hlistView"};
        }
 
        @Override

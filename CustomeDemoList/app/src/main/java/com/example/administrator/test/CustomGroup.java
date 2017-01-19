@@ -11,6 +11,7 @@ import android.widget.FrameLayout;
  */
 
 public class CustomGroup extends FrameLayout {
+
     public CustomGroup(Context context) {
         super(context);
     }
@@ -22,6 +23,7 @@ public class CustomGroup extends FrameLayout {
     public CustomGroup(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
+
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
